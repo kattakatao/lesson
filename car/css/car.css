@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  background-color: pink;
+  z-index: 1;
+}
+
+.content1 {
+  height: 500px;
+}
+
+.content2 {
+  position: relative;
+  height: 1050px;
+  -webkit-transform: skew(0deg, -10deg);
+  -moz-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  background-color: #f5a9bb;
+  z-index: 2;
+  margin-bottom: 200px;
+}
+
+span {
+  color: red;
+  border-bottom: 3px solid #ffff42;
+}
+
+.sumaashi {
+  padding-top: 50px;
+  margin-top: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  z-index: 3;
+  border-radius: 10px;
+  box-shadow:
+}
+
+.sumaashi-body {
+  padding-bottom: 30px;
+}
+
+.sumaashi-content {
+  width: 800px;
+  height: 750px;
+  background-color: #75f1fa;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.sumaashi-content2 {
+  width: 800px;
+  height: 700px;
+  background-color: #fcd2f2;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.sumaashi-content2-text {
+  padding-top: 60px;
+}
+
+.sumaashi-content3 {
+  width: 800px;
+  height: 400px;
+  background-color: #d2fce4;
+  margin: 30px auto;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+}
+
+/* 車写真 */
+.car-lineup-main {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.car-img {
+  margin: 50px;
+  position: relative;
+}
+
+.car-img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #3714c4;
+  /* line-height: 100px; */
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  white-space: normal;
+}
+
+.car-img-text span {
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  width: 100%;
+  white-space: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: none;
+}
+
+.car {
+  /* align-content: center; */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.car-img-link {
+  background-color: yellow;
+  height: 50px;
+  width: 100%;
+  border: 3px solid #0b1c9c;
+  border-radius: 15px;
+  /* border-bottom: -10px; */
+  left: 0;
+  bottom: -10px;
+  text-align: center;
+  /* padding: 15px;
+  margin: 15px; */
+  position: absolute;
+}
+
+.car-img-link span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  /* transform: translate(-50%, 0); */
+  font-weight: bold;
+  color: #0b1c9c;
+}
+
+.car-img-link span:first-child {
+  /* top: 50%; */
+  line-height: 16px;
+  transform: translate(-50%, -100%);
+}
+
+.car-img-link span:last-child {
+  /* bottom: 50%; */
+  line-height: 12px;
+  font-size: 12px;
+  transform: translate(-50%, 0);
+}
+
+/* .car-img-link a {
+  padding-top: 15px;
+} */
+
+/* sumaashi-content */
+
+.sumaashi-content-sub h2 {
+  color:#1aafc9;
+  padding-top: 30px;
+}
+
+.sumaashi-content-sub h1 {
+  color:#1aafc9;
+  border-bottom: 5px solid yellow;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.sumaashi-content-sub p {
+  margin: 10px 0;
+}
+
+
+
+.sumaashi-content-text {
+  background-color: yellow;
+  color: #3509e6;
+  width: 700px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.sumaashi-content-text p {
+  padding: 35px 0;
+  color: black;
+}
+
+.sumaashi-content-img {
+  display: flex;
+  justify-content: center;
+}
+
+.suma-img {
+  height: 250px;
+  width: 350px;
+  margin: 10px;
+}
+
+.sumaashi-content-button {
+  background-color: #14c4ff;
+  border-radius: 30px;
+  width: 500px;
+  height: 50px;
+  margin: 100px  auto;
+  padding: 10px;
+}
+
+/* sumaashi-content3 */
+
+.sumaashi-content3-title {
+  padding: 15px;
+  border-bottom: 1px solid black;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.sumaashi-content3-text {
+  padding: 15px;
+  font-size: 10px;
+}
+
+/* 地域選択 */
+.district {
+  width: 150px;
+  margin: 0 auto;
+}
