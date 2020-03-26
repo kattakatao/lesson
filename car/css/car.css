@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(245, 171, 173);
+}
+
 #wrapper {
-  background-color: pink;
+  background-color: rgb(245, 171, 173);
   z-index: 1;
+  /* height: 2020px; */
 }
 
 .content1 {
@@ -19,7 +24,7 @@
   -webkit-transform: skew(0deg, -10deg);
   -moz-transform: skew(0deg, -10deg);
   transform: skew(0deg, -10deg);
-  background-color: #f5a9bb;
+  background-color: rgb(240, 130, 131);
   z-index: 2;
   margin-bottom: 200px;
 }
@@ -38,7 +43,8 @@ span {
   text-align: center;
   z-index: 3;
   border-radius: 10px;
-  box-shadow:
+  margin-bottom: 60px;
+  box-shadow: 10px black;
 }
 
 .sumaashi-body {
@@ -48,27 +54,42 @@ span {
 .sumaashi-content {
   width: 800px;
   height: 750px;
-  background-color: #75f1fa;
+  background-color: rgb(227, 246, 252);
   margin: 30px auto;
   border-radius: 10px;
 }
 
 .sumaashi-content2 {
   width: 800px;
-  height: 700px;
-  background-color: #fcd2f2;
+  height: 470px;
+  background-color: rgb(252, 239, 245);
   margin: 30px auto;
   border-radius: 10px;
 }
 
 .sumaashi-content2-text {
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  line-height: 40px;
+}
+
+.sumaashi-content2-link {
+  background-color: #ff6bf5;
+  border-radius: 30px;
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  /* margin: 100px auto;
+  padding: 10px; */
+}
+
+.sumaashi-content2-link p {
+  transform: translateY(10px);
 }
 
 .sumaashi-content3 {
   width: 800px;
   height: 400px;
-  background-color: #d2fce4;
+  background-color: rgb(229, 245, 236);
   margin: 30px auto;
   border-radius: 10px;
   letter-spacing: 0.1em;
@@ -166,17 +187,15 @@ span {
 /* .car-img-link a {
   padding-top: 15px;
 } */
-
 /* sumaashi-content */
-
 .sumaashi-content-sub h2 {
-  color:#1aafc9;
+  color: #1aafc9;
   padding-top: 30px;
 }
 
 .sumaashi-content-sub h1 {
-  color:#1aafc9;
-  border-bottom: 5px solid yellow;
+  color: #1aafc9;
+  border-bottom: 20px solid yellow;
   width: 500px;
   margin: 0 auto;
 }
@@ -184,8 +203,6 @@ span {
 .sumaashi-content-sub p {
   margin: 10px 0;
 }
-
-
 
 .sumaashi-content-text {
   background-color: yellow;
@@ -201,6 +218,10 @@ span {
   color: black;
 }
 
+.sumaashi-content-text span {
+  color: rgb(33, 159, 232);
+}
+
 .sumaashi-content-img {
   display: flex;
   justify-content: center;
@@ -213,21 +234,30 @@ span {
 }
 
 .sumaashi-content-button {
-  background-color: #14c4ff;
-  border-radius: 30px;
   width: 500px;
-  height: 50px;
-  margin: 100px  auto;
+  margin: 100px auto;
   padding: 10px;
+  background-color: #14c4ff;
+}
+
+.sumaashi-content-button a {
+
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+
 }
 
 /* sumaashi-content3 */
-
 .sumaashi-content3-title {
-  padding: 15px;
-  border-bottom: 1px solid black;
+  padding-top: 50px;
+  border-bottom: 1px solid green;
   width: 400px;
   margin: 0 auto;
+}
+
+.sumaashi-content3-title h1 {
+   color: green;
 }
 
 .sumaashi-content3-text {
@@ -236,7 +266,51 @@ span {
 }
 
 /* 地域選択 */
-.district {
-  width: 150px;
+.district-flex {
+  max-width: 750px;
   margin: 0 auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+/* .district {
+  padding: 15px;
+} */
+
+.district-link {
+  margin: 15px;
+  position: relative;
+  border-radius: 30px;
+  border: 5px solid green;
+  background-color: #fff;
+  width: 220px;
+  height: 50px;
+}
+
+.district-link a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sumaashi-content2-title:first-child {
+  padding-top: 30px;
+}
+
+.sumaashi-content2-title{
+  padding-top: 30px;
+}
+
+
+.sumaashi-content2-title:last-child {
+  padding: 25px 0 40px 0;
+}
+
+.sumaashi-content2-title p {
+  line-height: 35px;
 }

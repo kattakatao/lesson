@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cx-3</title>
+  <link rel="stylesheet" href="css/cx-3.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+
+      $(function(){
+        var img = $('.top').outerHeight() / 2;
+
+
+        // var count = $('top').offset();
+        $(window).on('scroll', function() {
+          var scroll = $(window).scrollTop();
+
+
+          if(scroll > img) {
+            // alert('AAA');
+            $('.top').css('filter', 'brightness(50%)')
+          } else {
+            $('.top').css('filter', 'brightness(100%)')
+          }
+          console.log(scroll,count);
+
+        });
+        });
+
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="scroll">
+      <div class="top">
+      <div class="main-text">
+        <h1>MAZDA CX-3</h1>
+        <h3>深化した、パーソナルユース</h3>
+      </div>
+
+
+      <div class="main-text2">
+        <p>街乗りにジャストなサイズでありながら、<br>
+          快適なロングドライブを実現させる乗り心地と静かさ。<br>
+          上質な室内空間が、<br>
+          都会的で先進的なライフスタイルを表現する<br>
+          気品ある美しさと先鋭さを極めた、<br>
+          マツダのクロスオーバーSUV</p>
+        <!-- <h3>国内累計販売台数</h3>
+        <p><span>50</span>万台達成</p> -->
+        <img src="https://www.mazda.co.jp/globalassets/assets/cars/common/sky-d_50_logo.png">
+
+        <p>*2012年2月～2019年9月マツダのクリーンディーゼルエンジンを搭載した車両の新車販売(登録)台数の累計(マツダ調べ)</p>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="top-content">
+      <h1>MAZDA CX-3</h1>
+
+      <div class="top-table">
+
+        <table border="1" rules="rows">
+          <tbody>
+            <tr>
+              <th>乗車定員</th>
+              <td>5名</td>
+              <th>エンジン</th>
+              <td>ディーゼル</td>
+              <th>排気量</th>
+              <td>1.8L/2.0L</td>
+              <th>駆動方式</th>
+              <td>2WD/4WD</td>
+            </tr>
+
+            <tr>
+              <th>価格</th>
+              <td>¥2,167,000~ (消費税込)</td>
+              <th>トランスミッション</th>
+              <td>6EC-AT/6MT</td>
+              <th>燃費</th>
+              <td>[WLTCモード]15.2〜23.2km/L※1</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+        <p>※1 WLTCモード燃料消費率(国土交通省審査値)。WLTCモードは市街地、郊外、高速道路の各走行モードを平均的な使用時間配分で構成した国際走行モード。</p>
+      </div>
+
+
+
+      <div class="top-link">
+
+        <a href="#">グレード・価格</a>
+        <a href="#">簡単見積もり</a>
+      </div>
+
+      <div class="top-text">
+        <div class="top-text-2">
+
+          <h2>サポカー補助金:登録者は全車種全グレードサポカー補助金対象です。</h2>
+          <a href="#">詳しくはこちら</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="section">
+      <div class="section-img"></div>
+      <div class="section-content">
+        <img src="https://www.mazda.co.jp/globalassets/assets/cars/cx-3/cx3_ext_img01-2.png" width="1400px" height="500px">
+
+        <div class="section-text">
+          <h2>どこから見ても「上質さ」を感じてもらえるデザイン。</h2>
+          <p>CX-3が本来持っている先鋭さを研ぎ澄ませながら、より魂動デザインを深化。<br>
+            上質さを磨き上げ、クオリティを追求したデザインを実現しました。</p>
+        </div>
+
+        <div class="section-link">
+
+          <a href="#">エクステリアについて詳しく</a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="section2-img"></div>
+      <div class="section2-content">
+        <img src="https://www.mazda.co.jp/globalassets/assets/cars/cx-3/cx3_ext_img01-2.png" width="1400px" height="500px">
+
+        <div class="section2-text">
+          <h2>「引き算の美学」に基づき、無駄な動きや余分な表現を整理。</h2>
+          <p>室内の色使いや素材に統一感を持たせ、落ち着きのある空間を実現。<br>
+            乗る人すべてに洗練と落ち着きに包まれる心地よさをお届けします。</p>
+        </div>
+
+        <div class="section2-link">
+
+          <a href="#">インテリアについて詳しく</a>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

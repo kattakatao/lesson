@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* top */
+.top {
+  background-image: url("https://www.mazda.co.jp/globalassets/assets/cars/cx-3/cx-3_hero_img.jpg");
+  height: 300vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: all 2s;
+}
+
+.main-text {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.main-text h1 {
+  padding-top: 80px;
+}
+
+.main-text h3 {
+  padding-top: 30px;
+}
+
+.main-text2 {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.main-text2 p {
+  line-height: 45px;
+  font-size: 15px;
+}
+
+.top-content {
+  height: 550px;
+  margin-top: 50px;
+}
+
+.top-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.top-table p {
+  margin-top: 15px;
+  margin-left: 35px;
+  font-size: 5px;
+}
+
+.top-table table {
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+}
+
+.top-table table td {
+  padding: 10px;
+}
+
+.top-text {
+  height: 150px;
+  background-color: silver;
+  position: relative;
+  text-align: center;
+}
+
+.top-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-text-2 h2 {
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+
+.top-text-2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.top-link {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.top-link a {
+  padding: 12px 100px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  margin: 15px;
+}
+
+.top-link a:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* section */
+.section-img {
+  background-image: url("https://www.mazda.co.jp/globalassets/assets/cars/cx-3/cx-3-ext_img01.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-content {
+  text-align: center;
+  background-color: silver;
+  height: 900px;
+}
+
+.section-text {
+  margin-top: 100px;
+}
+
+.section-text p {
+  padding: 30px 0;
+  line-height: 35px;
+}
+
+.section-link {
+  margin-top: 15px;
+}
+
+.section-link a {
+  padding: 12px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.section-link a:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* section2 */
+.section2-img {
+  background-image: url("https://www.mazda.co.jp/globalassets/assets/cars/cx-3/cx-3-ext_img01.jpg");
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section2-content {
+  text-align: center;
+  background-color: #141414;
+  height: 900px;
+}
+
+.section2-text {
+  margin-top: 100px;
+  color: #fff;
+}
+
+.section2-text p {
+  padding: 30px 0;
+  line-height: 35px;
+}
+
+.section2-link {
+  margin-top: 15px;
+}
+
+.section2-link a {
+  padding: 12px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.section2-link a:hover {
+  background-color: #fff;
+  color: #000;
+}
