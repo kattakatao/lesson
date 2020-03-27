@@ -7,27 +7,25 @@
   <link rel="stylesheet" href="css/cx-3.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
-
-      $(function(){
-        var img = $('.top').outerHeight() / 2;
-
-
-        // var count = $('top').offset();
-        $(window).on('scroll', function() {
-          var scroll = $(window).scrollTop();
+    $(function() {
+      var img = $('.top').outerHeight() / 2;
 
 
-          if(scroll > img) {
-            // alert('AAA');
-            $('.top').css('filter', 'brightness(50%)')
-          } else {
-            $('.top').css('filter', 'brightness(100%)')
-          }
-          console.log(scroll,count);
+      // var count = $('top').offset();
+      $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
 
-        });
-        });
 
+        if (scroll > img) {
+          // alert('AAA');
+          $('.top').css('filter', 'brightness(50%)')
+        } else {
+          $('.top').css('filter', 'brightness(100%)')
+        }
+        console.log(scroll, count);
+
+      });
+    });
   </script>
 </head>
 
@@ -35,25 +33,23 @@
   <div id="wrapper">
     <div class="scroll">
       <div class="top">
-      <div class="main-text">
-        <h1>MAZDA CX-3</h1>
-        <h3>深化した、パーソナルユース</h3>
-      </div>
+        <div class="main-text">
+          <h1>MAZDA CX-3</h1>
+          <h3>深化した、パーソナルユース</h3>
+        </div>
 
 
-      <div class="main-text2">
-        <p>街乗りにジャストなサイズでありながら、<br>
-          快適なロングドライブを実現させる乗り心地と静かさ。<br>
-          上質な室内空間が、<br>
-          都会的で先進的なライフスタイルを表現する<br>
-          気品ある美しさと先鋭さを極めた、<br>
-          マツダのクロスオーバーSUV</p>
-        <!-- <h3>国内累計販売台数</h3>
-        <p><span>50</span>万台達成</p> -->
-        <img src="https://www.mazda.co.jp/globalassets/assets/cars/common/sky-d_50_logo.png">
+        <div class="main-text2">
+          <p>街乗りにジャストなサイズでありながら、<br>
+            快適なロングドライブを実現させる乗り心地と静かさ。<br>
+            上質な室内空間が、<br>
+            都会的で先進的なライフスタイルを表現する<br>
+            気品ある美しさと先鋭さを極めた、<br>
+            マツダのクロスオーバーSUV</p>
+          <img src="https://www.mazda.co.jp/globalassets/assets/cars/common/sky-d_50_logo.png">
 
-        <p>*2012年2月～2019年9月マツダのクリーンディーゼルエンジンを搭載した車両の新車販売(登録)台数の累計(マツダ調べ)</p>
-      </div>
+          <p>*2012年2月～2019年9月マツダのクリーンディーゼルエンジンを搭載した車両の新車販売(登録)台数の累計(マツダ調べ)</p>
+        </div>
 
       </div>
     </div>
@@ -63,26 +59,28 @@
 
       <div class="top-table">
 
-        <table border="1" rules="rows">
+        <table>
           <tbody>
             <tr>
-              <th>乗車定員</th>
+              <td>乗車定員</td>
               <td>5名</td>
-              <th>エンジン</th>
+              <td>エンジン</td>
               <td>ディーゼル</td>
-              <th>排気量</th>
+              <td>排気量</td>
               <td>1.8L/2.0L</td>
-              <th>駆動方式</th>
+              <td>駆動方式</td>
               <td>2WD/4WD</td>
             </tr>
 
             <tr>
-              <th>価格</th>
+              <td>価格</td>
               <td>¥2,167,000~ (消費税込)</td>
-              <th>トランスミッション</th>
+              <td>トランスミッション</td>
               <td>6EC-AT/6MT</td>
-              <th>燃費</th>
+              <td>燃費</td>
               <td>[WLTCモード]15.2〜23.2km/L※1</td>
+              <td></td>
+              <td></td>
             </tr>
 
           </tbody>
