@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* タイトル等のテキスト */
+.content {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+h1 {
+  color: blue;
+}
+
+h3 {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+}
+
+span {
+  font-weight: bold;
+}
+
+/*メイン画像 */
+.main-img {
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
+  background-color: #000;
+}
+
+/* カラー選択ボタン */
+.color-select {
+  text-align: center;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  margin: 30px 15px 15px 0;
+}
+
+.color-select-sub {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  border: 2px solid #d3d3d3;
+}
+
+.color-select-sub:checked::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.color-check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+/* SAMPLE */
+label.active{
+  border: 1px solid #777777;
+  border-radius: 50%;
+  padding: 3px;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/prius.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('input[name="select"]').change(function() {
+        var val = $(this).val();
+
+        if (val == 0) {
+          $('.main-img').css('background-color', 'rgb(246, 245, 246)');
+          $('.price').html('2,783,000');
+          // $('.label1').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 1) {
+          $('.main-img').css('background-color', 'rgb(246, 246, 245)');
+          $('.price').html('2,816,000');
+          // $('.label2').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 2) {
+          $('.main-img').css('background-color', 'rgb(216, 223, 224)');
+          $('.price').html('2,783,000');
+          // $('.label3').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 3) {
+          $('.main-img').css('background-color', 'rgb(167, 165, 159)');
+          $('.price').html('2,783,000');
+          // $('.label4').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 4) {
+          $('.main-img').css('background-color', 'rgb(77, 83, 81)');
+          $('.price').html('2,783,000');
+          // $('.label5').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 5) {
+          $('.main-img').css('background-color', 'rgb(12, 9, 4)');
+          $('.price').html('2,783,000');
+          // $('.label6').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 6) {
+          $('.main-img').css('background-color', 'rgb(4, 137, 206)');
+          $('.price').html('2,783,000');
+          // $('.label7').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 7) {
+          $('.main-img').css('background-color', 'rgb(221, 61, 59)');
+          $('.price').html('2,838,000');
+          // $('.label8').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        } else if (val == 8) {
+          $('.main-img').css('background-color', 'rgb(212, 222, 46)');
+          $('.price').html('2,827,000');
+          // $('.label9').css({
+          //   'border': '3px solid #000',
+          //   'border-radius': '50%'
+          // });
+        }
+      });
+      labelChange.init();
+    });
+
+
+
+    // $(function() {
+    //   $('.car-1').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,783,000');
+    //   });
+    //
+    //   $('.car-2').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,816,000');
+    //   });
+    //
+    //   $('.car-3').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,783,000');
+    //   });
+    //
+    //   $('.car-4').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,783,000');
+    //   });
+    //
+    //   $('.car-5').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,783,000');
+    //   });
+    //
+    //   $('.car-6').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,783,000');
+    //   });
+    //
+    //   $('.car-7').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,783,000');
+    //   });
+    //
+    //   $('.car-8').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,838,000');
+    //   });
+    //
+    //   $('.car-9').on('click', function() {
+    //     $('.car-img').css({
+    //       'filter': 'invert(50%)',
+    //       'filter': 'sepia(0%)',
+    //       'filter': 'saturate(11%)',
+    //       'filter': 'hue-rotate(143deg)',
+    //       'filter': 'brightness(101%)',
+    //       'filter': 'contrast(93%)'
+    //     });
+    //     $('.price').html('2,827,000');
+    //
+    //   });
+    // });
+    
+    var labelChange = {
+      init:function(){
+        this.addEvent();
+      },
+      addEvent:function(){
+        $('label > span').on('click', function(){
+          labelChange.resetLabels();
+          var prt = $(this).parent();
+          prt.addClass('active');
+        });
+      },
+      resetLabels:function(){
+        $('.color-select > label').each(function(i, e){
+          $(this).removeClass('active');
+        });
+      },
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="content">
+      <h1>PRIUS</h1>
+      <h3>S"ツーリングセレクション"(2WD)</h3>
+
+      <p>価格<span class="price">2,783,000</span>円(税込)</p>
+      <p>JC08モード:<span>37.2</span>km/L</p>
+      <p>WLTCモード: - </p>
+    </div>
+
+    <div class="main-img">
+      <img src="https://toyota.jp/pages/contents/prius/004_p_007/image/car-viewer/24_9_3_1/24_9_3_1_240.jpg" height="300px" width="500px" alt="">
+    </div>
+
+    <div class="color-select">
+      <label><input type="radio" name="select" value="0" class="color-check"><span class="color-select-sub" style="background-color: rgb(246, 245, 246);"></span></label>
+      <label><input type="radio" name="select" value="1" class="color-check"><span class="color-select-sub" style="background-color: rgb(246, 246, 245);"></span></label>
+      <label><input type="radio" name="select" value="2" class="color-check"><span class="color-select-sub" style="background-color: rgb(216, 223, 224)"></span></label>
+      <label><input type="radio" name="select" value="3" class="color-check"><span class="color-select-sub" style="background-color: rgb(167, 165, 159);"></span></label>
+      <label><input type="radio" name="select" value="4" class="color-check"><span class="color-select-sub" style="background-color: rgb(77, 83, 81);"></span></label>
+      <label><input type="radio" name="select" value="5" class="color-check"><span class="color-select-sub" style="background-color: rgb(12, 9, 4);"></span></label>
+      <label><input type="radio" name="select" value="6" class="color-check"><span class="color-select-sub" style="background-color: rgb(4, 137, 206);"></span></label>
+      <label><input type="radio" name="select" value="7" class="color-check"><span class="color-select-sub" style="background-color: rgb(221, 61, 59);"></span></label>
+      <label><input type="radio" name="select" value="8" class="color-check"><span class="color-select-sub" style="background-color: rgb(212, 222, 46);"></span></label>
+    </div>
+
+    <!-- <div class="color-select">
+      <label for="1" class="label1"><input type="radio" id="1" name="select" value="0" class="color-check"><span class="color-select-sub" style="background-color: rgb(246, 245, 246);"></span></label>
+      <label for="2" class="label2"><input type="radio" id="2" name="select" value="1" class="color-check"><span class="color-select-sub" style="background-color: rgb(246, 246, 245);"></span></label>
+      <label for="3" class="label3"><input type="radio" id="3" name="select" value="2" class="color-check"><span class="color-select-sub" style="background-color: rgb(216, 223, 224)"></span></label>
+      <label for="4" class="label4"><input type="radio" id="4" name="select" value="3" class="color-check"><span class="color-select-sub" style="background-color: rgb(167, 165, 159);"></span></label>
+      <label for="5" class="label5"><input type="radio" id="5" name="select" value="4" class="color-check"><span class="color-select-sub" style="background-color: rgb(77, 83, 81);"></span></label>
+      <label for="6" class="label6"><input type="radio" id="6" name="select" value="5" class="color-check"><span class="color-select-sub" style="background-color: rgb(12, 9, 4);"></span></label>
+      <label for="7" class="label7"><input type="radio" id="7" name="select" value="6" class="color-check"><span class="color-select-sub" style="background-color: rgb(4, 137, 206);"></span></label>
+      <label for="8" class="label8"><input type="radio" id="8" name="select" value="7" class="color-check"><span class="color-select-sub" style="background-color: rgb(221, 61, 59);"></span></label>
+      <label for="9" class="label9"><input type="radio" id="9" name="select" value="8" class="color-check"><span class="color-select-sub" style="background-color: rgb(212, 222, 46);"></span></label>
+    </div> -->
+
+  </div>
+
+
+</body>
+
+</html>
