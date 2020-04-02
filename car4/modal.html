@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Modal</title>
+  <link rel="stylesheet" href="modal.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#button, #modal-out').on('click', function() {
+        $('.modal-body').toggleClass('active');
+        return false;
+      });
+
+    });
+  </script>
+
+</head>
+
+<body>
+  <main>
+    <h1>お問い合わせをする中古車</h1>
+    <input type="button"  name="button" value="buttun" id="button">
+    <div class="modal-body">
+
+
+      <div class="modal-text">
+          <input type="button"  name="閉じる" value="button" id="modal-out">
+        <p>aaaaaaa</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

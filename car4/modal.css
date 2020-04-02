@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100vh;
+  opacity: .7;
+  left: 0;
+  top: 0;
+  z-index: 1005;
+  position: fixed;
+  background-color: #000;
+  display: block;
+}
+
+.modal-body.active {
+  display: none;
+}
+
+.modal-text {
+  position: absolute;
+  width: 80%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2050;
+  background-color: #fff;
+}
+
+#modal-out {
+  
+}
