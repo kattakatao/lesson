@@ -148,7 +148,7 @@ $(function() {
       $("#msg-kananame").addClass('color');
       $("#lastkana-name").addClass('input_design');
       $("#msg-kananame").text(msg[3]);
-    } else if (!$(this).val().match(/[^ァ-ン \s]+/)) {
+    } else if ($(this).val().match(/[^ァ-ン \s]+/)) {
       $("#msg-kananame").addClass('color');
       $("#lastkana-name").addClass('input_design');
       $("#msg-kananame").text(msg[4]);
@@ -167,7 +167,7 @@ $(function() {
       $("#msg-kananame2").addClass('color');
       $("#firstkana-name").addClass('input_design');
       $("#msg-kananame2").text(msg[5]);
-    } else if (!$(this).val().match(/[^ァ-ン \s]+/)) {
+    } else if ($(this).val().match(/[^ァ-ン \s]+/)) {
       $("#msg-kananame2").addClass('color');
       $("#firstkana-name").addClass('input_design');
       $("#msg-kananame2").text(msg[6]);
