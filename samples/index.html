@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>car-validation</title>
+  <link rel="stylesheet" href="css/validation2.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/validation2.js"></script>
+  <script src="js/jquery.autoKana.js"></script>
+  <!-- <script src="http://anshintest.xyz/wp-content/themes/twentynineteen/js/jquery.autoKana.js"></script> -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script type="text/javascript">
+      $(function() {
+        $.fn.autoKana('#last-name', '#lastkana-name', {
+            katakana : true  //true：カタカナ、false：ひらがな（デフォルト）
+        }),
+        $.fn.autoKana('#first-name', '#firstkana-name', {
+            katakana : true  //true：カタカナ、false：ひらがな（デフォルト）
+          });
+      });
+  </script>
+</head>
+
+<body>
+  <div id="wrappe">
+    <div class="form-content">
+      <div class="title-label">
+        <label>お問い合わせ内容<span>(必須)</span></label>
+      </div>
+
+      <div class="input-label">
+        <input type="radio" id="contact-radio" name="contact" value="見積もり以来"><label>見積もり以来</label>
+        <input type="radio" id="contact-radio" name="contact" value="来店予約"><label>来店予約</label>
+        <input type="radio" id="contact-radio" name="contact" value="お問い合わせ"><label>お問い合わせ</label>
+      </div>
+
+      <div class="title-label">
+        <label>詳細</label>
+      </div>
+
+      <div class="title-label">
+        <textarea name="name" rows="8" cols="80" placeholder="ご質問またはご要望があれば、入力してください。"></textarea>
+      </div>
+
+      <div class="contact">
+
+        <div class="contact-content">
+
+          <div class="title-label">
+            <label>ご連絡の連絡手段<span>(必須)</span></label>
+          </div>
+
+          <div class="input-label">
+            <label><input type="radio" name="contact" value="電話">電話</label>
+            <label><input type="radio" name="contact" value="メール">メール</label>
+            <label><input type="radio" name="contact" value="FAX">FAX</label>
+          </div>
+        </div>
+
+        <div class="contact-content2">
+          <div class="title-label">
+            <label>ご希望の連絡時間<span>(必須)</span></label>
+          </div>
+
+          <div class="input-label">
+            <input type="text" id="time" name="time" class="time-txt" value="" maxlength="15" placeholder="平日日中,8月1日14:00,特になし等">
+            <div id="msg-time"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="title-label">
+        <label>お名前<span>(必須)</span></label>
+      </div>
+
+      <div class="input-label">
+        <input type="text" id="last-name" class="name-txt" name="last-name" value="" maxlength="15" placeholder="姓">
+        <input type="text" id="first-name" class="name-txt" name="first-name" value="" maxlength="15" placeholder="名">
+        <div id="msg-last-name"></div>
+        <div id="msg-first-name"></div>
+      </div>
+
+      <div class="title-label">
+        <label>フリガナ<span>(必須)</span></label>
+      </div>
+
+      <div class="input-label">
+        <input type="text" id="lastkana-name" class="kana-txt" name="lastkana-name" value="" maxlength="15" placeholder="セイ">
+        <input type="text" id="firstkana-name" class="kana-txt" name="firstkana-name" value="" maxlength="15" placeholder="メイ">
+        <div id="msg-lastkana-name"></div>
+        <div id="msg-firstkana-name"></div>
+      </div>
+
+
+      <div class="title-label">
+        <label>メールアドレス<span>(必須)</span></label>
+      </div>
+
+      <div class="input-label">
+        <input type="email" id="email" class="email-txt" name="email" value="" maxlength="254" placeholder="usedcar@nissan.co.jp">
+        <div id="msg-email"></div>
+      </div>
+
+      <div class="title-label">
+        <label>電話番号<span>(必須)</span></label>
+      </div>
+
+      <div class="input-label">
+        <input type="tel" id="tel" class="tel-txt" name="tel" value="" maxlength="5" placeholder="012">-
+        <input type="tel" id="tel2" class="tel-txt" name="tel" value="" maxlength="4" placeholder="345">-
+        <input type="tel" id="tel3" class="tel-txt" name="tel" value="" maxlength="4" placeholder="6789">
+        <div id="msg-tel"></div>
+        <div id="msg-tel2"></div>
+        <div id="msg-tel3"></div>
+      </div>
+
+      <div class="title-label">
+        <label>郵便番号<span>(必須)</span></label>
+      </div>
+
+      <div class="input-label">
+        <input type="text" name="zip11" id="zip11" class="addresses-txt" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+        <div id="msg-zip11"></div>
+        <input type="hidden" name="addr11" size="60" class="addresses" maxlength="7" placeholder="1234567">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

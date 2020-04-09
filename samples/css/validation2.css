@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-content {
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+}
+
+.contact .contact-content2 {
+  border-left: 1px solid #000;
+  padding-left: 30px;
+}
+
+.color {
+  color: red;
+}
+
+.input_design {
+  border: 1px solid red;
+}
+
+.addresses {
+  display: none;
+}
+
+.time-txt {
+  width: 270px;
+  height: 40px;
+}
+
+.name-txt,
+.kana-txt {
+  width: 170px;
+  height: 40px;
+}
+
+.email-txt {
+  width: 355px;
+  height: 40px;
+}
+
+.tel-txt {
+  width: 55px;
+  height: 50px;
+}
+
+.addresses-txt {
+  width: 200px;
+  height: 40px;
+}
