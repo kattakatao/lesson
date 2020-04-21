@@ -30,49 +30,61 @@ $(function() {
 
 $(function() {
   radio.radioInit();
+
 });
 
 var radio = {
   radioInit: function() {
     this.radioEvent();
+
   },
   radioEvent: function() {
     this.changeEvent();
+
   },
   changeEvent: function() {
+    $('.fax-txt').prop('required', false);
     $('input[name="contact"],input[name="contact2"]').change(function() {
 
+      // var val = $(this).val();
       var val = $(this).val();
 
       radio.radioCheck(val);
     });
   },
   radioCheck: function(val) {
+
     switch (val) {
       case '来店予約':
         $('.title-none').show();
         $('.contact').hide();
         break;
       case 'メール':
-        $('.contact-content2').hide();
-        $('.changeItems').hide();
+        $('.toggle-time').hide();
+        $('.toggle-fax').hide();
         break;
       case 'FAX':
-        $('.contact-content2').hide();
-        $('.changeItems').toggle();
-        $('#fax,#fax2,#fax3').attr('required', 'required');
-        $('#time').removeAttr('required', 'required');
+        $('.toggle-time').hide();
+        $('.toggle-fax').toggle();
+        // $('.fax-txt').attr('required', '');
+        // $('#fax,#fax2,#fax3').removeAttr('disabled', 'disabled');
+        // $('.toggle-fax').attr('required', true);
+        // $('.fax-txt').prop('required', true);
+        $('.fax-txt').prop('required', true);
+        $('#time').prop('required', false);
         break;
       case '電話':
-        $('.changeItems').hide();
-        $('.contact-content2').toggle();
-        $('#fax,#fax2,#fax3').removeAttr('required', 'required');
-        $('#time').attr('required', 'required');
+        $('.toggle-fax').hide();
+        $('.toggle-time').toggle();
+        $('.fax-txt').prop('required', false);
+        // $('#fax,#fax2,#fax3').prop('disabled', 'disabled');
+        // $('#time').attr('required', '');
         break;
 
       default:
         $('.title-none').hide();
         $('.contact').show();
+        // $('.fax-txt').attr('required', false);
         break;
     }
   }

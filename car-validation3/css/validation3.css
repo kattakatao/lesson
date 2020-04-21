@@ -53,6 +53,11 @@
   height: 50px;
 }
 
+.fax-txt {
+  width: 55px;
+  height: 50px;
+}
+
 .addresses-txt {
   width: 200px;
   height: 40px;
@@ -97,7 +102,22 @@
   background-color: #aaa;
   cursor: not-allowed;
 }
-
+/*
 .changeItems{
   display: none;
+} */
+
+.toggle-fax {
+  display: none;
+  /* visibility: hidden; */
 }
+
+/* 連絡手段 */
+/* .contact-content {
+  max-width: 300px;
+  text-align: left;
+}
+
+.contact {
+  max-width: 300px;
+} */

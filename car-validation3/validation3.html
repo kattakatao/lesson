@@ -70,33 +70,73 @@
           </div>
 
           <div class="contact-content2">
-            <div class="title-label">
+            <div class="title-label toggle-time">
               <label>ご希望の連絡時間<span>(必須)</span></label>
             </div>
 
-            <div class="input-label">
-              <label for="time"><input required="required" type="text" id="time" name="time" class="time-txt" value="" maxlength="15" placeholder="平日日中,8月1日14:00,特になし等"></label>
+            <div class="input-label toggle-time">
+              <label for="time"><input required type="text" id="time" name="time" class="time-txt" value="" maxlength="15" placeholder="平日日中,8月1日14:00,特になし等"></label>
               <div id="msg-time"></div>
             </div>
           </div>
 
           <div class="changeItems">
 
-
-            <div class="title-label">
+            <div class="title-label toggle-fax">
               <label>FAX番号<span>(必須)</span></label>
             </div>
 
-            <div class="input-label">
-              <label for="fax"><input type="tel" id="fax" class="tel-txt" name="tel" value="" maxlength="5" placeholder="012"></label>
-              <label for="fax2"><input  type="tel" id="fax2" class="tel-txt" name="tel" value="" maxlength="4" placeholder="345"></label>
-              <label for="fax3"><input  type="tel" id="fax3" class="tel-txt" name="tel" value="" maxlength="4" placeholder="6789"></label>
+            <div class="input-label toggle-fax">
+              <label for="fax"><input required type="tel" id="fax" class="fax-txt" name="tel" value="" maxlength="5" placeholder="012"></label>
+              <label for="fax2"><input required type="tel" id="fax2" class="fax-txt" name="tel" value="" maxlength="4" placeholder="345"></label>
+              <label for="fax3"><input required type="tel" id="fax3" class="fax-txt" name="tel" value="" maxlength="4" placeholder="6789"></label>
+              <div id="msg-fax"></div>
+              <div id="msg-fax2"></div>
+              <div id="msg-fax3"></div>
+            </div>
+          </div>
+
+          <!-- <div class="contact-content2">
+            <div class="title-label toggle-time">
+              <label>ご希望の連絡時間<span>(必須)</span></label>
+            </div>
+
+            <div class="input-label toggle-time">
+              <label for="time"><input required="required" type="text" id="time" name="time" class="time-txt" value="" maxlength="15" placeholder="平日日中,8月1日14:00,特になし等"></label>
+              <div id="msg-time"></div>
+            </div>
+
+            <div class="title-label toggle-fax">
+              <label>FAX番号<span>(必須)</span></label>
+            </div>
+
+            <div class="input-label toggle-fax">
+              <label for="fax"><input type="tel" id="fax" class="fax-txt" name="tel" value="" maxlength="5" placeholder="012"></label>
+              <label for="fax2"><input  type="tel" id="fax2" class="fax-txt" name="tel" value="" maxlength="4" placeholder="345"></label>
+              <label for="fax3"><input  type="tel" id="fax3" class="fax-txt" name="tel" value="" maxlength="4" placeholder="6789"></label>
+              <div id="msg-fax"></div>
+              <div id="msg-fax2"></div>
+              <div id="msg-fax3"></div>
+            </div>
+          </div> -->
+
+          <!-- <div class="changeItems">
+
+
+            <div class="title-label toggle-fax">
+              <label>FAX番号<span>(必須)</span></label>
+            </div>
+
+            <div class="input-label toggle-fax">
+              <label for="fax"><input type="tel" id="fax" class="fax-txt" name="tel" value="" maxlength="5" placeholder="012"></label>
+              <label for="fax2"><input  type="tel" id="fax2" class="fax-txt" name="tel" value="" maxlength="4" placeholder="345"></label>
+              <label for="fax3"><input  type="tel" id="fax3" class="fax-txt" name="tel" value="" maxlength="4" placeholder="6789"></label>
               <div id="msg-fax"></div>
               <div id="msg-fax2"></div>
               <div id="msg-fax3"></div>
             </div>
 
-          </div>
+          </div> -->
 
         </div>
 
@@ -137,9 +177,9 @@
         </div>
 
         <div class="input-label">
-          <label for="tel"><input required type="tel" id="tel" class="tel-txt" name="tel" value="" maxlength="5" placeholder="012"></label>
-          <label for="tel2"><input required type="tel" id="tel2" class="tel-txt" name="tel" value="" maxlength="4" placeholder="345"></label>
-          <label for="tel3"><input required type="tel" id="tel3" class="tel-txt" name="tel" value="" maxlength="4" placeholder="6789"></label>
+          <label for="tel"><input required="false" type="tel" id="tel" class="tel-txt" name="tel" value="" maxlength="5" placeholder="012"></label>
+          <label for="tel2"><input required="false" type="tel" id="tel2" class="tel-txt" name="tel" value="" maxlength="4" placeholder="345"></label>
+          <label for="tel3"><input required="false" type="tel" id="tel3" class="tel-txt" name="tel" value="" maxlength="4" placeholder="6789"></label>
           <div id="msg-tel"></div>
           <div id="msg-tel2"></div>
           <div id="msg-tel3"></div>
