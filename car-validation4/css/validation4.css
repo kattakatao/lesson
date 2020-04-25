@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-content {
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.contact {
+  display: flex;
+  max-width: 600px;
+}
+
+/* .contact .contact-content2 {
+  border-left: 1px solid #000;
+  margin-left: 50px;
+} */
+.color {
+  color: red;
+}
+
+.input_design {
+  border: 1px solid red;
+}
+
+.label-show {
+  display: none;
+}
+
+.addresses {
+  display: none;
+}
+
+.time-txt {
+  width: 270px;
+  height: 40px;
+}
+
+.name-txt,
+.kana-txt {
+  width: 170px;
+  height: 40px;
+}
+
+.email-txt {
+  width: 355px;
+  height: 40px;
+}
+
+.tel-txt {
+  width: 55px;
+  height: 50px;
+}
+
+.fax-txt {
+  width: 55px;
+  height: 50px;
+}
+
+.addresses-txt {
+  width: 200px;
+  height: 40px;
+}
+
+.title-none,
+.contact-content3 {
+  display: none;
+}
+
+.title-block {
+  display: block;
+}
+
+.kaka {
+  background-color: blue;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.send {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.8em 5.6em;
+  background: #e95b43;
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.send[disabled] {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* .contact-content {
+  max-width: 400px;
+  /* border-right: 1px solid #000;
+  padding-right: 30px;
+} */
+.contact-content {
+  max-width: 400px;
+}
+
+.toggle-fax,
+.contact-content2 {
+  /* max-width: 400px; */
+  margin-left: 15px;
+}
+
+.border {
+  border: 1px solid #000;
+  margin-left: 15px;
+  /* max-width: 1px; */
+  /* margin-left: 30px; */
+}
+
+/* .msg-fax,
+.msg-fax2,
+.msg-fax3 {
+  max-width: 50px;
+} */
+/*
+.changeItems{
+  display: none;
+} */
+.toggle-fax {
+  display: none;
+  /* visibility: hidden; */
+}
+
+/* 連絡手段 */
+/* .contact-content {
+  max-width: 300px;
+  text-align: left;
+}
+
+.contact {
+  max-width: 300px;
+} */
