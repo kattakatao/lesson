@@ -86,50 +86,38 @@ var radio = {
     switch (val) {
       case '来店予約':
         $('.title-none').show();
-        $('.contact').hide();
+        $('.contact,#msg-show,.label-show').hide();
         $('#visit').prop('required', true);
         $('.title-show').prop('required', false);
         $('.title-show').removeAttr('id', 'show');
-        $('#msg-show').hide();
-        $('.label-show').hide();
         $('.title-show').removeClass('input_design');
         break;
       case 'メール':
-        $('.toggle-time').hide();
-        $('.toggle-fax').hide();
+        $('.toggle-time,.toggle-fax').hide();
         $('.title-show').prop('required', false);
         break;
       case 'FAX':
         $('.toggle-time').hide();
         $('.toggle-fax').toggle();
         $('.fax-txt').prop('required', true);
-        $('#visit').prop('required', false);
-        $('#time').prop('required', false);
-        $('.title-show').prop('required', false);
+        $('#visit,#time,.title-show').prop('required', false);
         break;
       case '電話':
         $('.toggle-fax').hide();
         $('.toggle-time').toggle();
-        $('.fax-txt').prop('required', false);
-        $('#visit').prop('required', false);
-        $('.title-show').prop('required', false);
+        $('.fax-txt,#visit,.title-show').prop('required', false);
         break;
       case 'お問い合わせ':
         $('.title-show').prop('required', true);
-        $('.title-show').attr('id', 'show');
-        $('.label-show').show();
-        $('#msg-show').show();
+        $('.title-show').attr('id', 'show');        $('.label-show,#msg-show,.contact').show();
         $('.title-none').hide();
-        $('.contact').show();
         break;
 
       default:
-        $('.title-none').hide();
+        $('.title-none,#msg-show,.label-show').hide();
         $('.title-show').removeAttr('id', 'show');
-        $('#msg-show').hide();
         $('.title-show').removeClass('input_design');
         $('.contact').show();
-        $('.label-show').hide();
         $('.title-show').prop('required', false);
         break;
     }
