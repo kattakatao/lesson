@@ -93,23 +93,26 @@ var radio = {
         $('.title-show').removeClass('input_design');
         break;
       case 'メール':
-        $('.toggle-time,.toggle-fax').hide();
+        $('.toggle-time,.toggle-fax,.border').hide();
         $('.title-show').prop('required', false);
         break;
       case 'FAX':
         $('.toggle-time').hide();
         $('.toggle-fax').toggle();
+        $('.border').show();
         $('.fax-txt').prop('required', true);
         $('#visit,#time,.title-show').prop('required', false);
         break;
       case '電話':
         $('.toggle-fax').hide();
         $('.toggle-time').toggle();
+        $('.border').show();
         $('.fax-txt,#visit,.title-show').prop('required', false);
         break;
       case 'お問い合わせ':
         $('.title-show').prop('required', true);
-        $('.title-show').attr('id', 'show');        $('.label-show,#msg-show,.contact').show();
+        $('.title-show').attr('id', 'show');
+        $('.label-show,#msg-show,.contact,.border').show();
         $('.title-none').hide();
         break;
 
@@ -117,7 +120,7 @@ var radio = {
         $('.title-none,#msg-show,.label-show').hide();
         $('.title-show').removeAttr('id', 'show');
         $('.title-show').removeClass('input_design');
-        $('.contact').show();
+        $('.contact,.border').show();
         $('.title-show').prop('required', false);
         break;
     }
