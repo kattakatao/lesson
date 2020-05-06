@@ -11,10 +11,15 @@ $(function() {
     let flag = true;
     //必須項目をひとつずつチェック
     $('form input:required,textarea:required').each(function(e) {
-      //必須項目が空なら
-      if ($('form input:required,textarea:required').eq(e).val() === "") {
-        flag = false;
-      }
+      var id = $(this).attr('id');
+      var errVal = $('#msg' +id).val();
+      // $('input["submit"]').attr('disabled', true);
+      if(errVal!=='') flag = false;
+
+      // //必須項目が空なら
+      // if ($('form input:required,textarea:required').eq(e).val() === "") {
+      //   flag = false;
+
     });
 
     if (flag) {
@@ -38,9 +43,14 @@ $(function() {
     //必須項目をひとつずつチェック
     $('form input:required,textarea:required').each(function(e) {
       //必須項目が空なら
-      if ($('form input:required,textarea:required').eq(e).val() === "") {
-        flag = false;
-      }
+      var id = $(this).attr('id');
+      var errVal = $('#msg' +id).val();
+      // $('input[type="submit"]').attr('disabled', true);
+      if(errVal!=='') flag = false;
+
+      // if ($('form input:required,textarea:required').eq(e).val() === "") {
+      //   flag = false;
+      // }
     });
 
     if (flag) {
@@ -52,103 +62,6 @@ $(function() {
     }
   });
 });
-
-
-//試したコード Start
-//submitボタン
-// $(function() {
-//   $('.send').prop("disabled", true);
-//  var id = $(this).attr('id');
-//
-// //入力欄の操作時
-// $('#msg' +id).change(function() {
-//   //必須項目が空かどうかフラグ
-//   let flag = true;
-//   //必須項目をひとつずつチェック
-//   $('#msg' +id).each(function(e) {
-//     //必須項目が空なら
-//     if ($('#msg' +id).eq(e).css('display') == 'block') {
-//       flag = false;
-//     }
-//   });
-//
-//   if (flag) {
-//     //送信ボタン復活
-//     $('.send').prop("disabled", false);
-//   } else {
-//     //送信ボタン閉じる
-//     $('.send').prop("disabled", true);
-//   }
-// });
-// });
-
-// $(function() {
-//   //送信ボタン無効化
-//   $('.send').prop("disabled", true);
-//   var id = $(this).attr('id');
-//
-//   //入力欄の操作時
-//   $("#msg" + id).change(function() {
-//     //必須項目が空かどうかフラグ
-//     // let flag = true;
-//     // var design = $('input').hasClass('input_design');
-//     // var design2 = $('input').hasClass('');
-//     //必須項目をひとつずつチェック
-//     $("#msg" + id).each(function(e) {
-//
-//       //必須項目が空なら
-//       //$('form input:required,textarea:required').eq(e).val() === "")
-//       if ($('#msg' + id).eq(e).css('display') == 'block') {
-//         $('.send').prop("disabled", true);
-//         // flag = false;
-//       } else if ($('form input:required,textarea:required').eq(e).val() === "") {
-//         $('.send').prop("disabled", true);
-//         // flag = false;
-//       }
-//     });
-//
-//     if ($('#msg' + id).css('display') == 'none') {
-//       //送信ボタン復活
-//       $('.send').prop("disabled", false);
-//     } else {
-//       //送信ボタン閉じる
-//       $('.send').prop("disabled", true);
-//     }
-//   });
-
-  //radioボタンが変更されたら
-//   $('input[name="contact"],input[name="contact2"]').change(function() {
-//     $('.send').prop("disabled", true);
-//
-//   });
-//   //入力欄の操作時
-//   $('form input:required,textarea:required').change(function() {
-//     //必須項目が空かどうかフラグ
-//     let flag = true;
-//     var id = $(this).attr('id');
-//     // var design = $('input').hasClass('input_design');
-//     // var design2 = $('input').hasClass('');
-//     //必須項目をひとつずつチェック
-//     $('form input:required,textarea:required').each(function(e) {
-//
-//       //必須項目が空なら
-//       if ($('#msg' + id).eq(e).css('display') == 'block') {
-//         flag = false;
-//       } else if ($('form input:required,textarea:required').eq(e).val() === "") {
-//         flag = false;
-//       }
-//     });
-//
-//     if (flag) {
-//       //送信ボタン復活
-//       $('.send').prop("disabled", false);
-//     } else {
-//       //送信ボタン閉じる
-//       $('.send').prop("disabled", true);
-//     }
-//   });
-// });
-// 試したコード StartEND
 
 
 //radioボタン
@@ -175,14 +88,15 @@ var radio = {
 
 
       var val = $(this).val();
-
-      radio.radioCheck(val);
+  var id = $(this).attr('id');
+      radio.radioCheck(id,val);
     });
   },
-  radioCheck: function(val) {
+  radioCheck: function(id,val) {
 
-    switch (val) {
+    switch (id,val) {
       case '来店予約':
+        $("#msg-fax,#msg-fax2,#msg-fax3,#msg-time,#msg-show").text('');
         $('.title-none').show();
         $('.contact,#msg-show,.label-show').hide();
         $('#visit').prop('required', true);
@@ -191,21 +105,28 @@ var radio = {
         $('.title-show').removeClass('input_design');
         break;
       case 'メール':
+        $("#msg-fax,#msg-fax2,#msg-fax3,#msg-time,#msg-visit,#msg-show").text('');
+        // this.reset('mail');
         $('.toggle-time,.toggle-fax').hide();
         $('.title-show').prop('required', false);
         break;
       case 'FAX':
+        $("#msg-time,#msg-visit,#msg-show").text('');
+        // this.reset('fax');
         $('.toggle-time').hide();
         $('.toggle-fax').toggle();
         $('.fax-txt').prop('required', true);
         $('#visit,#time,.title-show').prop('required', false);
         break;
       case '電話':
+        $("#msg-fax,#msg-fax2,#msg-fax3").text('');
+        // this.reset('tel');
         $('.toggle-fax').hide();
         $('.toggle-time').toggle();
         $('.fax-txt,#visit,.title-show').prop('required', false);
         break;
       case 'お問い合わせ':
+        $("#msg-fax,#msg-fax2,#msg-fax3,#msg-visit").text('');
         $('.title-show').prop('required', true);
         $('.title-show').attr('id', 'show');
         $('.label-show,#msg-show,.contact').show();
@@ -222,6 +143,18 @@ var radio = {
     }
   }
 }
+
+//   reset:function(way) {
+//     var id = $(this).attr('id');
+//     var arr = ['tel','mail','fax'];
+//     for (var i = 0; i < arr.length; i++) {
+//       if (arr[i]!==way) {
+//         $("#msg-" + id).text('');
+//         validation.removeError(id);
+//       }
+//     }
+//   }
+// }
 
 // バリデーション
 
